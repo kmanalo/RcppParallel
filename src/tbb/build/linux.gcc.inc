@@ -45,9 +45,9 @@ ifneq (,$(shell gcc -dumpversion | egrep  "^(4\.[2-9]|[5-9])"))
 endif
 
 # gcc 4.8 and later support RTM intrinsics, but require command line switch to enable them
-ifneq (,$(shell gcc -dumpversion | egrep  "^(4\.[8-9]|[5-9])"))
-    RTM_KEY = -mrtm
-endif
+#ifneq (,$(shell gcc -dumpversion | egrep  "^(4\.[8-9]|[5-9])"))
+#    RTM_KEY = -mrtm
+#endif
 
 # gcc 4.0 and later have -Wextra that is used by some our customers.
 ifneq (,$(shell gcc -dumpversion | egrep  "^([4-9])"))
